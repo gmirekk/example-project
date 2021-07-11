@@ -1,0 +1,86 @@
+//Main font - Work Sans - 500, 600
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap');
+
+//Variables
+
+//Fonts
+@font-family: 'Work Sans', sans-serif;
+@semi-bold: 600;
+@regular: 500;
+
+//Colors
+@navy: #314584;
+@red: #ff3946;
+
+//Button radius
+@radius: 30px;
+
+//SCREEN SIZES
+@small: 0px;
+@medium: 639px;
+@large: 1024px;
+@xlarge: 1200px;
+@xxlarge: 1440px;
+
+// GLOBAL
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: @font-family;
+  font-size: 18px;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  z-index: 1;
+}
+
+section {
+  position: relative;
+
+  .grid-container {
+    height: 100%;
+    position: relative;
+    max-width: 1170px;
+  }
+
+  .grid-x {
+    height: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: @navy;
+  font-weight: @semi-bold;
+}
+
+a {
+  text-decoration: none;
+  font-weight: @semi-bold;
+}
+
+button {
+  font-weight: @semi-bold;
+  cursor: pointer;
+}
+
+.page {
+  position: relative;
+}
+
+.primary-btn,
+.secondary-btn {
+  border-radius: @radius;
+  background-color: @red;
+}
